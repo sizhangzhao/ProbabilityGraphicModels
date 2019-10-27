@@ -1,0 +1,9 @@
+% testVar = phenotypeGivenGenotypeFactor([0.8, 0.2, 0.1], ["AA", "Aa", "aa"], [0, 1] );
+%testVar = genotypeGivenAlleleFreqsFactor([0.8, 0.2, 0.1], 1 );
+%testVar = genotypeGivenParentsGenotypesFactor(2, 1, 1, 1 );
+pedigree.names = {'Ira', 'James', 'Robin'};
+pedigree.parents = [0, 0; 1, 3; 0, 0];
+% testVar = constructGeneticNetwork(pedigree, [100, 5], [0.8,0.15,0.05]);
+% testVar = phenotypeGivenCopiesFactor([0.8,0.15,0.05],2, 1, 1, 1);
+% testVar = constructDecoupledGeneticNetwork(pedigree, [100, 5], [0.8,0.15,0.05]);
+testVar = constructSigmoidPhenotypeFactor({[-2,1], [3, -2, 0]}, [1, 2], [1, 2], 1);
